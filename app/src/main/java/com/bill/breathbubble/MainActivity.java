@@ -15,23 +15,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleClick1(View view) {
-        Intent intent = new Intent(this, ThirdActivity.class);
-        intent.putExtra("selectAll", true);
-        intent.putExtra("forbid", true);
+        Intent intent = new Intent(this, FirstActivity.class);
         startActivity(intent);
     }
 
     public void handleClick2(View view) {
-        Intent intent = new Intent(this, ThirdActivity.class);
-        intent.putExtra("selectAll", true);
-        intent.putExtra("forbid", false);
+        Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
 
     public void handleClick3(View view) {
         Intent intent = new Intent(this, ThirdActivity.class);
-        intent.putExtra("selectAll", false);
-        intent.putExtra("forbid", false);
+        startActivity(intent);
+    }
+
+    public void handleClick4(View view) {
+        Intent intent = new Intent(this, FourActivity.class);
         startActivity(intent);
     }
 }

@@ -38,12 +38,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         list = Arrays.asList(title);
 
-        breathView.setData(list, getIntent().getBooleanExtra("selectAll", false),
-                getIntent().getBooleanExtra("forbid", false));
-
-        if (getIntent().getBooleanExtra("selectAll", false)) {
-            startView.setBackgroundResource(R.drawable.shape_interest_recommend_start_bg_select);
-        }
+        breathView.setData(list, false, false);
 
         breathView.setBubbleClickListener(new BreatheBubbleView2.BubbleClickListener() {
             @Override
