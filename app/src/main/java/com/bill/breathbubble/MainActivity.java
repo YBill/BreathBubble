@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FourActivity.class);
         startActivity(intent);
     }
+
+    public void handleClick5(View view) {
+        Intent intent = new Intent(this, FiveActivity.class);
+        startActivity(intent);
+    }
 }

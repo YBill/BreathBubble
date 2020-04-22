@@ -86,14 +86,14 @@ public class FourActivity extends AppCompatActivity {
 
         float scale = screenWidth / designWidth;
 
-        moveX = moveX * scale;
-        moveY = moveY * scale;
+//        moveX = moveX * scale;
+//        moveY = moveY * scale;
 
         Log.e("Bill", designWidth + "|" + screenWidth + "|" + scale + "|" + moveX);
 
-        View bubbleView = findViewById(R.id.bubble_view);
-        bubbleView.setScaleX(scale);
-        bubbleView.setScaleX(scale);
+//        View bubbleView = findViewById(R.id.bubble_view);
+//        bubbleView.setScaleX(scale);
+//        bubbleView.setScaleX(scale);
     }
 
     public void handleClick(View view) {
